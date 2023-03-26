@@ -8,6 +8,9 @@ const cors =require("cors")
 
 app.use(express.json())
 
+app.get("/",(req,res)=>{
+res.send("Home page")
+})
 
 
 app.use(cors())
